@@ -418,8 +418,66 @@
         </div>
 
     </footer>
+    </footer>
 
+
+    <!-- =========================
+         COOKIE CONSENT
+    ========================== -->
+
+    <div class="cookie-banner" id="cookieBanner">
+
+        <p>
+            We use cookies to help our website work properly
+            and improve your experience.
+        </p>
+
+        <div class="cookie-buttons">
+
+            <button
+                class="cookie-reject"
+                onclick="rejectCookies()">
+                Reject
+            </button>
+
+            <button
+                class="cookie-accept"
+                onclick="acceptCookies()">
+                Accept
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function acceptCookies() {
+
+            localStorage.setItem("cookieConsent", "accepted");
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+
+        function rejectCookies() {
+
+            localStorage.setItem("cookieConsent", "rejected");
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+
+        if (localStorage.getItem("cookieConsent")) {
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+    </script>
 
 </body>
-
 </html>
