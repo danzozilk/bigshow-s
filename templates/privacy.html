@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Privacy Policy for BIGSHOW Integrated Logistics Ltd">
+
+    <title>Privacy Policy | BIGSHOW Integrated Logistics</title>
+
+    <link rel="stylesheet" href="../static/style/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="index.html#Home" class="logo">
+    <img src="../static/images/bigshow-logo.jpg" alt="Bigshow Integrated Logistics">
+        </a>
+
+        <nav class="nav-menue">
+
+            <a href="index.html#Home">Home</a>
+
+            <a href="index.html#aboutus">About Us</a>
+
+            <a href="index.html#services">Services</a>
+
+            <a href="index.html#why">Why Bigshow</a>
+
+            <a href="career.html">Careers</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PRIVACY POLICY -->
+
+    <main class="privacy-page">
+
+        <div class="privacy-container">
+
+            <p class="section-label">
+                PRIVACY
+            </p>
+
+            <h2>
+                Privacy Policy
+            </h2>
+
+            <p>
+                BIGSHOW Integrated Logistics Ltd respects your privacy
+                and is committed to protecting your personal information.
+            </p>
+
+
+            <h3>
+                Information We Collect
+            </h3>
+
+            <p>
+                When you contact us or apply for a position, we may collect
+                information such as your name, email address, telephone
+                number, application details and information about your
+                experience.
+            </p>
+
+
+            <h3>
+                How We Use Your Information
+            </h3>
+
+            <p>
+                We use information provided through our website to respond
+                to enquiries, process applications, communicate with
+                applicants and provide our services.
+            </p>
+
+
+            <h3>
+                Recruitment Applications
+            </h3>
+
+            <p>
+                Information submitted through our careers application form
+                may be reviewed by BIGSHOW Integrated Logistics Ltd for
+                recruitment purposes. We may contact applicants using the
+                contact details provided in their application.
+            </p>
+
+
+            <h3>
+                Third-Party Services
+            </h3>
+
+            <p>
+                Our website may use third-party services to provide certain
+                functionality, including our online application forms.
+                Information submitted through these services may be processed
+                by the relevant service provider.
+            </p>
+
+
+            <h3>
+                Data Security
+            </h3>
+
+            <p>
+                We take reasonable steps to protect personal information
+                submitted through our website from unauthorised access,
+                alteration or disclosure.
+            </p>
+
+
+            <h3>
+                Your Rights
+            </h3>
+
+            <p>
+                Depending on the circumstances, you may have rights relating
+                to your personal information, including the right to request
+                access to, correction of, or deletion of your information.
+            </p>
+
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <p>
+                If you have questions about this Privacy Policy or how your
+                personal information is handled, please contact:
+            </p>
+
+            <p>
+                <strong>BIGSHOW Integrated Logistics Ltd</strong><br>
+                Email:
+                <a href="mailto:Info@bigshowlogisticsltd.co.uk">
+                    Info@bigshowlogisticsltd.co.uk
+                </a>
+            </p>
+
+
+            <p class="privacy-note">
+                This Privacy Policy should be reviewed and approved by
+                BIGSHOW Integrated Logistics Ltd before publication.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; BIGSHOW Integrated Logistics
+        </p>
+
+    </footer>
+    <footer>
+
+        <p>
+            &copy; BIGSHOW Integrated Logistics
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/profile.php?id=61590866248976"
+                aria-label="Facebook">
+
+                <i class="fab fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.instagram.com/bigshowintegratedlogistic"
+                aria-label="Instagram">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- COOKIE CONSENT -->
+
+    <div class="cookie-banner" id="cookieBanner">
+
+        <div class="cookie-content">
+
+            <h3>Cookie preferences</h3>
+
+            <p>
+                We use essential website storage to remember your cookie
+                preferences. We do not currently use advertising or analytics
+                cookies. You can accept or reject optional cookies.
+            </p>
+
+            <a href="privacy.html">
+                Read our Privacy Policy
+            </a>
+
+        </div>
+
+        <div class="cookie-buttons">
+
+            <button
+                type="button"
+                class="cookie-reject"
+                onclick="setCookieConsent('rejected')">
+                Reject
+            </button>
+
+            <button
+                type="button"
+                class="cookie-accept"
+                onclick="setCookieConsent('accepted')">
+                Accept
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function setCookieConsent(choice) {
+
+            localStorage.setItem(
+                "bigshowCookieConsent",
+                choice
+            );
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const consent =
+                localStorage.getItem("bigshowCookieConsent");
+
+            if (consent) {
+
+                document.getElementById("cookieBanner").style.display = "none";
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+</html>

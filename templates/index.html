@@ -11,13 +11,15 @@
     </head>
     <body>
     <header class="navbar">
-        <h1 class ="logo">BIGSHOW'S INTEGRATED LOGISTIC</h1>
+        <a href="index.html#Home" class="logo">
+    <img src="../static/images/bigshow-logo.jpg" alt="Bigshow Integrated Logistics">
+        </a>
         <nav class="nav-menue">
                 <a href="#Home">Home</a>
                 <a href="#aboutus">About us</a>
                 <a href="#services"> services</a>
                 <a href="#why">WHY BIGSHOW</a>
-                <a href="/career">Career</a>
+                <a href="career.html">Career</a>
         </nav>
     </header>
     <section id="Home" class="hero">
@@ -127,63 +129,65 @@
     </footer>
 
 
-    <!-- =========================
-         COOKIE CONSENT
-    ========================== -->
+<!-- COOKIE CONSENT -->
 
-    <div class="cookie-banner" id="cookieBanner">
+<div class="cookie-banner" id="cookieBanner">
+
+    <div class="cookie-content">
+
+        <h3>Cookie preferences</h3>
 
         <p>
-            We use cookies to help our website work properly
-            and improve your experience.
+            We use essential website storage to remember your cookie
+            preferences. We do not currently use advertising or analytics
+            cookies. You can accept or reject optional cookies.
         </p>
 
-        <div class="cookie-buttons">
-
-            <button
-                class="cookie-reject"
-                onclick="rejectCookies()">
-                Reject
-            </button>
-
-            <button
-                class="cookie-accept"
-                onclick="acceptCookies()">
-                Accept
-            </button>
-
-        </div>
+        <a href="privacy.html">Read our Privacy Policy</a>
 
     </div>
 
+    <div class="cookie-buttons">
 
-    <script>
+        <button
+            type="button"
+            class="cookie-reject"
+            onclick="setCookieConsent('rejected')">
+            Reject
+        </button>
 
-        function acceptCookies() {
+        <button
+            type="button"
+            class="cookie-accept"
+            onclick="setCookieConsent('accepted')">
+            Accept
+        </button>
 
-            localStorage.setItem("cookieConsent", "accepted");
+    </div>
 
-            document.getElementById("cookieBanner").style.display = "none";
+</div>
 
-        }
+<script>
 
+function setCookieConsent(choice) {
 
-        function rejectCookies() {
+    localStorage.setItem("bigshowCookieConsent", choice);
 
-            localStorage.setItem("cookieConsent", "rejected");
+    document.getElementById("cookieBanner").style.display = "none";
 
-            document.getElementById("cookieBanner").style.display = "none";
+}
 
-        }
+document.addEventListener("DOMContentLoaded", function () {
 
+    const consent = localStorage.getItem("bigshowCookieConsent");
 
-        if (localStorage.getItem("cookieConsent")) {
+    if (consent) {
+        document.getElementById("cookieBanner").style.display = "none";
+    }
 
-            document.getElementById("cookieBanner").style.display = "none";
+});
 
-        }
-
-    </script>
+</script>
 
 </body>
 </html>
