@@ -1,0 +1,12 @@
+{
+"rewrites": [
+    {
+    "source": "/",
+    "destination": "/templates/index.html"
+    },
+    {
+    "source": "/career",
+    "destination": "/templates/career.html"
+    }
+]
+}
