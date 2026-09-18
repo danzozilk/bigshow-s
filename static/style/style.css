@@ -291,38 +291,183 @@ h1, h2, h3, p {
                 background: #f4c542; 
                 color: #111; 
             } 
-            /* ========================= FOOTER ========================= */ 
-            footer { 
-                background: #111827; 
-                color: white; 
-                text-align: center; 
-                padding: 35px 20px; 
-            } 
-            footer p { 
-                margin-bottom: 20px; 
-            } 
-            .social-links { 
-                display: flex; 
-                justify-content: center; 
-                gap: 20px; 
-            } .social-links a { 
-                width: 45px; 
-                height: 45px; 
-                background: #f4c542; 
-                color: #111; 
-                border-radius: 50%; 
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                text-decoration: none; 
-                font-size: 20px; 
-                transition: 0.3s ease; 
-            } 
-            .social-links a:hover { 
-                background: white; 
-                color: #1a365d; 
-                transform: translateY(-5px); 
-            } 
+/* ========================= FOOTER ========================= */
+
+.site-footer {
+    background: #111827;
+    color: white;
+    padding: 0;
+}
+
+/* Yellow accent at the top */
+.footer-top-line {
+    height: 5px;
+    background: #f4c542;
+}
+
+
+/* Main footer area */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 40px 45px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: 70px;
+}
+
+
+/* Footer headings */
+.footer-section h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Company description */
+.footer-company h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-company h2 span {
+    color: #f4c542;
+}
+
+.footer-company p {
+    color: #d1d5db;
+    line-height: 1.7;
+    max-width: 330px;
+}
+
+
+/* Quick links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f4c542;
+    padding-left: 5px;
+}
+
+
+/* Contact details */
+.footer-contact p {
+    margin-bottom: 13px;
+    color: #d1d5db;
+}
+
+.footer-contact a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #f4c542;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f4c542;
+    transform: translateY(-3px);
+}
+
+/* Bottom section */
+.footer-bottom {
+    border-top: 1px solid #374151;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Bottom links */
+.footer-bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom-links a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #f4c542;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* ========================= MOBILE ========================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 45px 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 25px;
+    }
+
+}
 /* =========================
    CAREER HERO
 ========================= */
